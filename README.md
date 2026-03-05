@@ -32,3 +32,28 @@ Example Request Body:
   "operationType": "DEPOSIT",
   "amount": 5000
 }
+
+## How to Run the Project
+
+1. Install PostgreSQL on your system.
+
+2. Create a database named:
+walletdb
+
+3. Update database configuration in `application.properties`:
+
+spring.datasource.url=jdbc:postgresql://localhost:5432/walletdb  
+spring.datasource.username=postgres  
+spring.datasource.password=your_password  
+
+4. Run the Spring Boot application.
+
+Using IntelliJ:
+Run `WalletserviceApplication.java`
+
+Or using Maven:
+
+mvn spring-boot:run
+
+5. Application will start on:
+http://localhost:8080
